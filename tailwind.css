@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: Graphik;
+}
+
+.content{
+    width: 402px;
+    height: 353px;
+}
+.photo{
+    max-height:840px
+}
