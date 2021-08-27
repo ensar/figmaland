@@ -4,18 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FigmaLand</title>
     <link rel="stylesheet" href="../fonts/stylesheet.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="bg-mainBlack">
-    <header class="flex justify-between items-center bg-mainBlack">
+    <header
+      class="
+        flex
+        justify-between
+        items-center
+        bg-mainBlack
+        sm:justify-evenly
+        relative
+      "
+    >
       <div class="w-52 h-20"><img src="../images/logo dark.png" /></div>
+      <ul
+        class="
+          menu
+          flex
+          text-white
+          flex-col
+          bg-primary
+          w-full
+          items-center
+          justify-around
+          h-screen
+          absolute
+          top-0
+          left-0
+          transform
+          -translate-x-full
+          sm:w-348
+          sm:justify-evenly
+          sm:translate-x-0
+          sm:h-full
+          sm:flex-row
+          sm:relative
+          sm:bg-mainBlack
+        "
+      >
+        <button class="closeMenuBtn ml-auto mr-8 text-4xl sm:hidden">x</button>
+        <li class="sm:hidden">
+          <a href="#"><img src="../images/logo dark.png" /></a>
+        </li>
+        <li class="hover:text-secondText"><a href="#">Home</a></li>
+        <li class="hover:text-secondText"><a href="#">Product</a></li>
+        <li class="hover:text-secondText"><a href="#">About</a></li>
+        <li class="hover:text-secondText"><a href="#">Contact</a></li>
+      </ul>
       <div class="flex items-center justify-items-center">
         <button class="bg-transparent border w-36 h-12 text-white mr-4">
           Login
         </button>
-        <button class="w-16 h-12">
+        <button class="openMenuBtn w-16 h-12 sm:hidden">
           <img src="../images/icons/Vector (4).svg" />
         </button>
       </div>
@@ -381,4 +424,5 @@
       </div>
     </footer>
   </body>
+  <script src="./app.js"></script>
 </html>
